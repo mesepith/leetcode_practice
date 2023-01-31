@@ -120,11 +120,11 @@ class Solution {
 $sol = new Solution();
 
 $inputs = ["flower","flow","flight"];
-// $inputs = ["dog","racecar","car"];
-// $inputs = [""];
-// $inputs = ["a"];
-// $inputs = ["",""];
-// $inputs = ["","b"];
+$inputs = ["dog","racecar","car"];
+$inputs = [""];
+$inputs = ["a"];
+$inputs = ["",""];
+$inputs = ["","b"];
 $inputs = ["ab","a"];
 $inputs = ["c","c"];
 $inputs = ["aaa","aa","aaa"];
