@@ -59,11 +59,12 @@ class Solution {
 
             if($l1->val < $l2->val){
                 
-                $merged_list->next = $l1;
-                $l1 = $l1->next;
 
                 echo ' <br/>111111111111111111 value of l1 inside if condition : 111111111111111111 ';
                 echo '<pre>'; print_r($l1);
+                $merged_list->next = $l1;
+                $l1 = $l1->next;
+
             }else{
                 
                 $merged_list->next = $l2;
