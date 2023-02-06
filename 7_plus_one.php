@@ -6,8 +6,25 @@ class Solution {
      * @return Integer[]
      */
     function plusOne($digits) {
-        $final_array = str_split(implode('',$digits)+1);
-        return $final_array;
+        
+        $last_index = count($digits) - 1;
+        
+        if($digits[$last_index] < 9){
+            $digits[$last_index]++;
+            return $digits;
+        } 
+
+        while($last_index >= 0){
+            if($digits[$last_index] == 9){
+                $digits[$last_index] = 0;
+                $last_index--;
+            } else {
+                  $digits[$last_index]++;
+                  return $digits;
+            }
+        }
+
+        return ['1', ...$digits];
     }
 }
 
